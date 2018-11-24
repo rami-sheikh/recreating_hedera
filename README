@@ -13,14 +13,17 @@ Current tasks list:
 
 2) Find a way to generate traffic as needed, look at cluster_gen folder from the stanford code
    repo. The C code program generates required inputs. The inputs folder houses its ouputs.
+
+    -> Website mentions they ended up going with iperf to generate needed traffic patterns. Sounds
+       about right~
     
-    -> how do we use this output in mininet?
 
 3) Performance measurement
     
-    -> seems like iperf is used to do this
+    -> seems like iperf is used to do this?
     -> how do you measure average bisection bandwidth? 
        -> bisection BW: ie. bw/ core routers && pods || pods && hosts
+    -> website mentions using bwm-ng to measure bandwidth reliably.
 
 
 Task Notes:
@@ -36,4 +39,17 @@ Task Notes:
     (aggregation switches). Each edge switch manages
     (k/2) hosts. The k pods are interconnected by (k/2)^2
     core switches.
+
+    ==> for k = 4  ---> 4 core routers
+                   |
+                   ---> 4 pods (8 aggregate switches + 8 edge switches)
+                   |
+                   ---> 16 hosts
+
+        36 devices total
+        simulatable -> this what the stanford code does
+
+        Note for k = 6 number of hosts becomes 36 hosts / maybe simulatable
+        (69 devices total)
+
 
