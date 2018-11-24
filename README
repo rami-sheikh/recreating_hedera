@@ -1,4 +1,39 @@
 Initial Commit
 
-We will finish this.
+We will finish this. Using this file to track research updates and general info for now.
+
+Welcome to use stanford code for inspiration to solve any of the problems listed in the tasks.
+
+Current tasks list: 
+
+
+1) Accurately model the fat-tree topology described in paper.
+    
+    -> verify/validate
+
+2) Find a way to generate traffic as needed, look at cluster_gen folder from the stanford code
+   repo. The C code program generates required inputs. The inputs folder houses its ouputs.
+    
+    -> how do we use this output in mininet?
+
+3) Performance measurement
+    
+    -> seems like iperf is used to do this
+    -> how do you measure average bisection bandwidth? 
+       -> bisection BW: ie. bw/ core routers && pods || pods && hosts
+
+
+Task Notes:
+
+1)  Reading from hedera paper: https://raghavan.usc.edu/papers/hedera-nsdi10.pdf 
+    
+    Excerpt from section 5: (see Figure 8)
+    
+    For the rest of the paper, we adopt the following terminology:
+    for a fat-tree network built from k-port switches,  -> core switch at the roots of the tree
+    there are k pods, each consisting of two layers: lower pod
+    switches (edge switches), and the upper pod switches
+    (aggregation switches). Each edge switch manages
+    (k/2) hosts. The k pods are interconnected by (k/2)^2
+    core switches.
 
