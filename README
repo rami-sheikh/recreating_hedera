@@ -1,55 +1,24 @@
-Initial Commit
-
-We will finish this. Using this file to track research updates and general info for now.
-
-Welcome to use stanford code for inspiration to solve any of the problems listed in the tasks.
-
-Current tasks list: 
+Instruction on running the experiment
 
 
-1) Accurately model the fat-tree topology described in paper.
-    
-    -> verify/validate
+git submodule init
+git submodule update
 
-2) Find a way to generate traffic as needed, look at cluster_gen folder from the stanford code
-   repo. The C code program generates required inputs. The inputs folder houses its ouputs.
+cd cluster_loadgen
+make
 
-    -> Website mentions they ended up going with iperf to generate needed traffic patterns. Sounds
-       about right~
-    
+./run_experiment
 
-3) Performance measurement
-    
-    -> seems like iperf is used to do this?
-    -> how do you measure average bisection bandwidth? 
-       -> bisection BW: ie. bw/ core routers && pods || pods && hosts
-    -> website mentions using bwm-ng to measure bandwidth reliably.
+./gen_plot 
 
+Dependencies:
+    - Latest Mininet (git://github.com/mininet/mininet.git, cs244 branch)
+    - POX (git://github.com/noxrepo/pox)
+	
 
-Task Notes:
+Make sure to add ~/hedera to the pythonpath 
 
-1)  Reading from hedera paper: https://raghavan.usc.edu/papers/hedera-nsdi10.pdf 
-    
-    Excerpt from section 5: (see Figure 8)
-    
-    For the rest of the paper, we adopt the following terminology:
-    for a fat-tree network built from k-port switches,  -> core switch at the roots of the tree
-    there are k pods, each consisting of two layers: lower pod
-    switches (edge switches), and the upper pod switches
-    (aggregation switches). Each edge switch manages
-    (k/2) hosts. The k pods are interconnected by (k/2)^2
-    core switches.
+or add a symbolic link in ~/pox/ext/ using 
 
-    ==> for k = 4  ---> 4 core routers
-                   |
-                   ---> 4 pods (8 aggregate switches + 8 edge switches)
-                   |
-                   ---> 16 hosts
-
-        36 devices total
-        simulatable -> this what the stanford code does
-
-        Note for k = 6 number of hosts becomes 36 hosts / maybe simulatable
-        (69 devices total)
-
-
+ln -s ~/hedera/DCController.py 
+ln -s ~/hedera/HController.py
