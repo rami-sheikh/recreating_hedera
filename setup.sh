@@ -40,3 +40,7 @@ for file in $reqs; do
 done
 echo "Done adding links"
 popd 1> /dev/null
+
+echo -ne "Cleaning Up.. "
+rm deps links
+echo "done"
