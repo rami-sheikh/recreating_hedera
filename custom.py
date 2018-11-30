@@ -33,7 +33,7 @@ setLogLevel( 'info' )
 
 hedera.clean()
 
-pox_c = Popen("~/pox/pox.py %s --topo=ft,4 --routing=ECMP"% "DCController", shell=True)
+pox_c = Popen("bash -c ~/pox/pox.py %s --topo=ft,4 --routing=ECMP"% "DCController", shell=True)
 
 info('*** Creating the topology')
 topo = hedera.FatTreeTopo(4)
@@ -63,7 +63,7 @@ data = open("/home/mininet/hedera/inputs/all_to_all_data")
 hedera.start_tcpprobe()
 
 info('*** Starting iperf ...\n')
-for line in data:
+'''for line in data:
     flow = line.split(' ')
     src_ip = flow[0]
     dst_ip = flow[1]
@@ -73,14 +73,16 @@ for line in data:
         continue
     sleep(0.2)
     server = host_list[dst_ip]
-    server.popen('iperf -s -p %s' % port, shell = True )
+    #    server.popen('iperf -s -p %s' % port, shell = True )
 
     client = host_list[src_ip]
     #    client.popen('iperf -c %s -p %s -t %d > %s.txt'
     #        % (server.IP(), port, TIME, client.__str__()), shell = True )
     # works !! := client.popen('echo "Hello World!" > %s.txt' % client.__str__(), shell = True )
     print net.iperf(hosts = [server, client], seconds = TIME)
+'''
 
+print net.ping(hosts=[hosts[0], hosts[5]], timeout="10")
 
 monitor = multiprocessing.Process(target = monitor_devs_ng, args =
             ('%s/rate.txt' % "/home/mininet/hedera/results", 0.01))

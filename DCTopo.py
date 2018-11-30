@@ -196,4 +196,4 @@ class FatTreeTopo(Topo):
         return d
     
 
-topos = {'fattree': (lambda: FatTreeTopo())}
+topos = {'fattree': (lambda: FatTreeTopo()), 'nonblocking': (lambda: NonBlockingTopo())}

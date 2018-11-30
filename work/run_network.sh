@@ -8,7 +8,7 @@ if [ $# -eq 0 ] || [ $1 = "-h" ]
 
 else
 		echo "Running network with controller $1 and topology $2..."
-		xterm -e ~/pox/pox.py $1 --topo=$3,$4 --routing=$5 &
+		~/pox/pox.py $1 --topo=$3,$4 --routing=$5
 		sleep 3
-		xterm -e sudo mn --custom $2.py --topo fattree --controller remote &
+		sudo mn --custom $2.py --topo fattree --controller remote
 fi

@@ -75,7 +75,7 @@ def NonBlockingNet(k=4, bw=10, cpu=-1, queue=100):
 def FatTreeNet(k=4, bw=10, cpu=-1, queue=100,controller='HController'):
     ''' Create a Fat-Tree network '''
 
-    pox_c = Popen("~/pox/pox.py %s --topo=ft,4 --routing=ECMP"%controller, shell=True)
+    #pox_c = Popen("~/pox/pox.py %s --topo=ft,4 --routing=ECMP"%controller, shell=True)
 
     info('*** Creating the topology')
     topo = FatTreeTopo(k)
@@ -121,8 +121,9 @@ def iperfTrafficGen(args, hosts, net):
         src_ip = flow[0]
         dst_ip = flow[1]
         if src_ip not in host_list:
+            print("Unique: %s not in host_list" % src_ip)
             continue
-        sleep(0.2)        
+        sleep(0.2)
         server = host_list[dst_ip]
         server.popen('iperf -s -p %s > ~/hedera/server.txt' % port, shell = True)
 
@@ -217,7 +218,8 @@ def NonBlockingTest(args):
 
 def clean():
     ''' Clean any the running instances of POX '''
-
+    pass
+'''
     p = Popen("ps aux | grep 'pox' | awk '{print $2}'",
             stdout=PIPE, shell=True)
     p.wait()
@@ -228,6 +230,7 @@ def clean():
             Popen('kill %d' % pid, shell=True).wait()
         except:
             pass
+'''
 
 if __name__ == '__main__':
 

@@ -1,0 +1,110 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  1.0  0.1  34440  4932 ?        Ss   16:08   0:51 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    16:08   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    16:08   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   16:08   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    16:08   0:01 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    16:08   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    16:08   0:00 [rcuos/0]
+root        10  0.0  0.0      0     0 ?        S    16:08   0:00 [rcuob/0]
+root        11  0.0  0.0      0     0 ?        S    16:08   0:00 [migration/0]
+root        12  0.0  0.0      0     0 ?        S    16:08   0:00 [watchdog/0]
+root        13  0.0  0.0      0     0 ?        S    16:08   0:00 [watchdog/1]
+root        14  0.0  0.0      0     0 ?        S    16:08   0:00 [migration/1]
+root        15  0.0  0.0      0     0 ?        S    16:08   0:01 [ksoftirqd/1]
+root        17  0.0  0.0      0     0 ?        S<   16:08   0:00 [kworker/1:0H]
+root        18  0.0  0.0      0     0 ?        S    16:08   0:00 [rcuos/1]
+root        19  0.0  0.0      0     0 ?        S    16:08   0:00 [rcuob/1]
+root        20  0.0  0.0      0     0 ?        S    16:08   0:00 [watchdog/2]
+root        21  0.0  0.0      0     0 ?        S    16:08   0:00 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    16:08   0:01 [ksoftirqd/2]
+root        24  0.0  0.0      0     0 ?        S<   16:08   0:00 [kworker/2:0H]
+root        25  0.0  0.0      0     0 ?        R    16:08   0:01 [rcuos/2]
+root        26  0.0  0.0      0     0 ?        S    16:08   0:00 [rcuob/2]
+root        27  0.0  0.0      0     0 ?        S    16:08   0:00 [watchdog/3]
+root        28  0.0  0.0      0     0 ?        S    16:08   0:00 [migration/3]
+root        29  0.0  0.0      0     0 ?        S    16:08   0:01 [ksoftirqd/3]
+root        31  0.0  0.0      0     0 ?        S<   16:08   0:00 [kworker/3:0H]
+root        32  0.0  0.0      0     0 ?        S    16:08   0:00 [rcuos/3]
+root        33  0.0  0.0      0     0 ?        S    16:08   0:00 [rcuob/3]
+root        34  0.0  0.0      0     0 ?        S<   16:08   0:00 [khelper]
+root        35  0.0  0.0      0     0 ?        S    16:08   0:00 [kdevtmpfs]
+root        36  0.0  0.0      0     0 ?        S<   16:08   0:00 [netns]
+root        37  0.0  0.0      0     0 ?        S<   16:08   0:00 [perf]
+root        38  0.0  0.0      0     0 ?        S    16:08   0:00 [khungtaskd]
+root        39  0.0  0.0      0     0 ?        S<   16:08   0:00 [writeback]
+root        40  0.0  0.0      0     0 ?        SN   16:08   0:00 [ksmd]
+root        41  0.0  0.0      0     0 ?        SN   16:08   0:00 [khugepaged]
+root        42  0.0  0.0      0     0 ?        S<   16:08   0:00 [crypto]
+root        43  0.0  0.0      0     0 ?        S<   16:08   0:00 [kintegrityd]
+root        44  0.0  0.0      0     0 ?        S<   16:08   0:00 [bioset]
+root        45  0.0  0.0      0     0 ?        S<   16:08   0:00 [kblockd]
+root        46  0.0  0.0      0     0 ?        S<   16:08   0:00 [ata_sff]
+root        47  0.0  0.0      0     0 ?        S<   16:08   0:00 [md]
+root        48  0.0  0.0      0     0 ?        S<   16:08   0:00 [devfreq_wq]
+root        55  0.0  0.0      0     0 ?        S    16:08   0:00 [kswapd0]
+root        56  0.0  0.0      0     0 ?        S    16:08   0:00 [fsnotify_mark]
+root        57  0.0  0.0      0     0 ?        S    16:08   0:00 [ecryptfs-kthrea]
+root        68  0.0  0.0      0     0 ?        S<   16:08   0:00 [kthrotld]
+root        69  0.0  0.0      0     0 ?        S<   16:08   0:00 [acpi_thermal_pm]
+root        92  0.0  0.0      0     0 ?        S<   16:08   0:00 [deferwq]
+root        93  0.0  0.0      0     0 ?        S<   16:08   0:00 [charger_manager]
+root       145  0.0  0.0      0     0 ?        S<   16:08   0:00 [kpsmoused]
+root       147  0.0  0.0      0     0 ?        S<   16:08   0:00 [mpt_poll_0]
+root       148  0.0  0.0      0     0 ?        S<   16:08   0:00 [mpt/0]
+root       150  0.0  0.0      0     0 ?        S    16:08   0:00 [scsi_eh_0]
+root       151  0.0  0.0      0     0 ?        S<   16:08   0:00 [scsi_tmf_0]
+root       164  0.0  0.0      0     0 ?        S    16:08   0:00 [jbd2/sda1-8]
+root       165  0.0  0.0      0     0 ?        S<   16:08   0:00 [ext4-rsv-conver]
+root       203  0.0  0.0      0     0 ?        S<   16:08   0:00 [kworker/1:1H]
+root       377  0.2  0.0  19620  2120 ?        S    16:08   0:10 upstart-udev-bridge --daemon
+root       381  0.0  0.0  51776  3596 ?        Ss   16:08   0:01 /lib/systemd/systemd-udevd --daemon
+root       428  0.0  0.0      0     0 ?        S<   16:08   0:00 [iprt-VBoxWQueue]
+message+   453  0.1  0.0  39248  2496 ?        Ss   16:08   0:08 dbus-daemon --system --fork
+root       503  0.0  0.0  43464  3284 ?        Ss   16:08   0:00 /lib/systemd/systemd-logind
+syslog     527  0.0  0.0 255852  3108 ?        Ssl  16:08   0:00 rsyslogd
+root       573  0.1  0.0  15552  2008 ?        S    16:08   0:08 upstart-file-bridge --daemon
+root       593  0.1  0.0  15272   192 ?        S    16:08   0:08 upstart-socket-bridge --daemon
+root       715  0.0  0.0  10240  3176 ?        Ss   16:08   0:00 dhclient -1 -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases eth0
+root       797  0.0  0.0      0     0 ?        S<   16:08   0:00 [kworker/3:1H]
+root       981  0.0  0.0  16068  2044 tty4     Ss+  16:08   0:00 /sbin/getty -8 38400 tty4
+root       983  0.0  0.0  16068  2016 tty5     Ss+  16:08   0:00 /sbin/getty -8 38400 tty5
+root       986  0.0  0.0  16068  2024 tty2     Ss+  16:08   0:00 /sbin/getty -8 38400 tty2
+root       987  0.0  0.0  16068  2088 tty3     Ss+  16:08   0:00 /sbin/getty -8 38400 tty3
+root       989  0.0  0.0  16068  2032 tty6     Ss+  16:08   0:00 /sbin/getty -8 38400 tty6
+root      1007  0.0  0.0  23664  2212 ?        Ss   16:08   0:00 cron
+root      1010  0.0  0.0  19208  2188 ?        Ss   16:08   0:00 /usr/sbin/irqbalance
+root      1012  0.0  0.1  61388  5576 ?        Ss   16:08   0:00 /usr/sbin/sshd -D
+root      1063  0.0  0.0  20956   416 ?        S<s  16:08   0:04 ovsdb-server: monitoring pid 1064 (healthy)                                                                                                                                                                                                                                                                                                                                                         
+root      1064  0.0  0.1  22876  6180 ?        S<   16:08   0:03 ovsdb-server /etc/openvswitch/conf.db -vconsole:emer -vsyslog:err -vfile:info --remote=punix:/var/run/openvswitch/db.sock --private-key=db:Open_vSwitch,SSL,private_key --certificate=db:Open_vSwitch,SSL,certificate --bootstrap-ca-cert=db:Open_vSwitch,SSL,ca_cert --no-chdir --log-file=/var/log/openvswitch/ovsdb-server.log --pidfile=/var/run/openvswitch/ovsdb-server.pid --detach --monitor
+root      1073  0.0  0.0  21464   432 ?        S<s  16:08   0:04 ovs-vswitchd: monitoring pid 1074 (healthy)                                                                                                                                                                                     
+root      1074  0.3  0.9 247796 39360 ?        S<L  16:08   0:18 ovs-vswitchd unix:/var/run/openvswitch/db.sock -vconsole:emer -vsyslog:err -vfile:info --mlockall --no-chdir --log-file=/var/log/openvswitch/ovs-vswitchd.log --pidfile=/var/run/openvswitch/ovs-vswitchd.pid --detach --monitor
+ntp       1870  0.0  0.0  31340  3744 ?        Ss   16:09   0:00 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 105:114
+root      1930  0.0  0.0  16068  2032 tty1     Ss+  16:09   0:00 /sbin/getty -8 38400 tty1
+root      1958  0.0  0.0      0     0 ?        S    16:10   0:00 [kauditd]
+root      5045  0.0  0.0      0     0 ?        S<   16:12   0:00 [kworker/2:1H]
+root     10263  0.0  0.0      0     0 ?        S    16:36   0:00 [kworker/1:2]
+root     12486  0.0  0.0      0     0 ?        S    17:03   0:00 [kworker/0:1]
+root     15010  0.0  0.0      0     0 ?        S    16:44   0:00 [kworker/2:0]
+root     16139  0.0  0.0      0     0 ?        S    17:03   0:00 [kworker/3:0]
+root     16275  0.0  0.0      0     0 ?        S    17:03   0:00 [kworker/1:1]
+root     19000  0.0  0.1 103092  6528 ?        Ss   16:48   0:00 sshd: mininet [priv]
+mininet  19019  0.0  0.1 103232  4048 ?        S    16:48   0:00 sshd: mininet@pts/3 
+mininet  19020  0.0  0.1  22836  5372 pts/3    Ss   16:48   0:00 -bash
+root     20497  0.0  0.0   4456   864 ?        S    17:03   0:00 /bin/sh -c mnexec -g 0h0h2 -da 17010 iperf -s -p 5001 > ~/hedera/server.txt
+root     20498  0.1  0.0 170560  1476 ?        Ssl  17:03   0:02 iperf -s -p 5001
+root     21908  0.0  0.0      0     0 ?        S<   17:14   0:00 [kworker/0:1H]
+root     21921  0.0  0.0      0     0 ?        S    17:15   0:00 [kworker/u8:0]
+mininet  21984  0.0  0.1  50252  7952 pts/3    S+   17:18   0:00 vim test.sh
+root     22003  0.0  0.0      0     0 ?        S    17:19   0:00 [kworker/u8:3]
+root     22203  0.0  0.1 103092  6464 ?        Ss   17:26   0:00 sshd: mininet [priv]
+root     22218  0.0  0.0      0     0 ?        S    17:26   0:00 [kworker/0:0]
+mininet  22223  0.0  0.0 103092  3440 ?        S    17:26   0:00 sshd: mininet@pts/4 
+mininet  22224  0.0  0.1  22724  5224 pts/4    Ss   17:26   0:00 -bash
+root     22417  0.0  0.0      0     0 ?        S    17:28   0:00 [kworker/2:1]
+root     22613  0.0  0.0      0     0 ?        S    16:50   0:00 [kworker/3:2]
+root     23453  0.0  0.0      0     0 ?        S    17:28   0:00 [kworker/u8:1]
+root     23935  0.0  0.0  12796  1912 ?        Ss   17:29   0:00 /sbin/getty -L ttyS0 9600 vt102
+mininet  23937  0.0  0.0  18700  2464 pts/4    R+   17:29   0:00 ps aux
+root     25339  0.0  0.0      0     0 ?        S    16:58   0:00 [kworker/0:2]
+root     26440  0.0  0.0      0     0 ?        S    17:01   0:00 [kworker/2:3]

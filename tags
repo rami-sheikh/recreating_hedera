@@ -1,0 +1,447 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AXES_2Y	monitor/plot_defaults.py	/^AXES_2Y = [DEF_AXIS_LEFT, DEF_AXIS_BOTTOM, AXIS_2Y_WIDTH, DEF_AXIS_HEIGHT]$/;"	v
+AXES_LABELSIZE	monitor/plot_defaults.py	/^AXES_LABELSIZE = 24$/;"	v
+AXIS_2Y_RIGHT	monitor/plot_defaults.py	/^AXIS_2Y_RIGHT = 0.8$/;"	v
+AXIS_2Y_WIDTH	monitor/plot_defaults.py	/^AXIS_2Y_WIDTH = AXIS_2Y_RIGHT - DEF_AXIS_LEFT$/;"	v
+BACKLOG	cluster_loadgen/server.cc	27;"	d	file:
+BUFSIZE	cluster_loadgen/client.cc	26;"	d	file:
+BUFSIZE	cluster_loadgen/server.cc	26;"	d	file:
+BUFSIZE_UDP	cluster_loadgen/client.cc	27;"	d	file:
+BW	hedera.py	/^BW = 10 $/;"	v
+CC	cluster_loadgen/Makefile	/^CC=g++$/;"	m
+CFLAGS	cluster_loadgen/Makefile	/^CFLAGS=-Wall -O3 -g$/;"	m
+CLIENT_H	cluster_loadgen/client.h	25;"	d
+COLOR_HLINES	monitor/plot_defaults.py	/^COLOR_HLINES = 'black'$/;"	v
+COLOR_LIGHTGRAY	monitor/plot_defaults.py	/^COLOR_LIGHTGRAY = '#cccccc'$/;"	v
+COMMON_H	cluster_loadgen/common.h	25;"	d
+Client	cluster_loadgen/client.h	/^class Client : public EventHandler {$/;"	c
+DCController	DCController.py	/^class DCController(EventMixin):$/;"	c
+DEF_AXES	monitor/plot_defaults.py	/^DEF_AXES = [DEF_AXIS_LEFT, DEF_AXIS_BOTTOM, DEF_AXIS_WIDTH, DEF_AXIS_HEIGHT]$/;"	v
+DEF_AXIS_BOTTOM	monitor/plot_defaults.py	/^DEF_AXIS_BOTTOM = 0.1$/;"	v
+DEF_AXIS_HEIGHT	monitor/plot_defaults.py	/^DEF_AXIS_HEIGHT = DEF_AXIS_TOP - DEF_AXIS_BOTTOM$/;"	v
+DEF_AXIS_LEFT	monitor/plot_defaults.py	/^DEF_AXIS_LEFT = 0.15$/;"	v
+DEF_AXIS_RIGHT	monitor/plot_defaults.py	/^DEF_AXIS_RIGHT = 0.95$/;"	v
+DEF_AXIS_TOP	monitor/plot_defaults.py	/^DEF_AXIS_TOP = 0.95$/;"	v
+DEF_AXIS_WIDTH	monitor/plot_defaults.py	/^DEF_AXIS_WIDTH = DEF_AXIS_RIGHT - DEF_AXIS_LEFT$/;"	v
+EVENTHANDLER_H	cluster_loadgen/EventHandler.h	2;"	d
+Est_Dst	DemandEstimation.py	/^def Est_Dst(M, flows, dst):$/;"	f
+Est_Src	DemandEstimation.py	/^def Est_Src(M, flows, src):$/;"	f
+EventHandler	cluster_loadgen/EventHandler.h	/^class EventHandler {$/;"	c
+FatTreeNet	hedera.py	/^def FatTreeNet(k=4, bw=10, cpu=-1, queue=100,controller='HController'):$/;"	f
+FatTreeNode	DCTopo.py	/^class FatTreeNode(object):$/;"	c
+FatTreeTest	hedera.py	/^def FatTreeTest(args,controller):$/;"	f
+FatTreeTopo	DCTopo.py	/^class FatTreeTopo(Topo):    $/;"	c
+HController	HController.py	/^class HController(EventMixin):$/;"	c
+HLINE_LABELSIZE	monitor/plot_defaults.py	/^HLINE_LABELSIZE = 24$/;"	v
+HLINE_LINEWIDTH	monitor/plot_defaults.py	/^HLINE_LINEWIDTH = 2$/;"	v
+HashedRouting	DCRouting.py	/^class HashedRouting(Routing):$/;"	c
+IP2name_dpid	HController.py	/^    def IP2name_dpid(self,IP):$/;"	m	class:HController
+K	hedera.py	/^K = 4$/;"	v
+LAYER_AGG	DCTopo.py	/^    LAYER_AGG  = 1$/;"	v	class:FatTreeTopo
+LAYER_CORE	DCTopo.py	/^    LAYER_CORE = 0$/;"	v	class:FatTreeTopo
+LAYER_CORE	DCTopo.py	/^    LAYER_CORE = 0$/;"	v	class:NonBlockingTopo
+LAYER_EDGE	DCTopo.py	/^    LAYER_EDGE = 2$/;"	v	class:FatTreeTopo
+LAYER_HOST	DCTopo.py	/^    LAYER_HOST = 3$/;"	v	class:FatTreeTopo
+LAYER_HOST	DCTopo.py	/^    LAYER_HOST = 3$/;"	v	class:NonBlockingTopo
+LFLAGS	cluster_loadgen/Makefile	/^LFLAGS=-pthread$/;"	m
+MAX_LINE_LEN	cluster_loadgen/client.cc	28;"	d	file:
+MISS_SEND_LEN	DCController.py	/^MISS_SEND_LEN = 2000$/;"	v
+MISS_SEND_LEN	HController.py	/^MISS_SEND_LEN = 2000$/;"	v
+NonBlockingNet	hedera.py	/^def NonBlockingNet(k=4, bw=10, cpu=-1, queue=100):$/;"	f
+NonBlockingTest	hedera.py	/^def NonBlockingTest(args):$/;"	f
+NonBlockingTopo	DCTopo.py	/^class NonBlockingTopo(Topo):$/;"	c
+QUEUE_SIZE	hedera.py	/^QUEUE_SIZE = 100$/;"	v
+ROUTING	util.py	/^ROUTING = {'ECMP' : HashedRouting}$/;"	v
+RPC	cluster_loadgen/client.h	/^    RPC = 2,$/;"	e	enum:trafficType
+Routing	DCRouting.py	/^class Routing(object):$/;"	c
+SERVER_H	cluster_loadgen/server.h	25;"	d
+Server	cluster_loadgen/server.h	/^class Server : public EventHandler {$/;"	c
+Switch	DCController.py	/^class Switch(EventMixin):$/;"	c
+Switch	HController.py	/^class Switch(EventMixin):$/;"	c
+TCP	cluster_loadgen/client.h	/^    TCP = 1,$/;"	e	enum:trafficType
+TEXT_LABELSIZE	monitor/plot_defaults.py	/^TEXT_LABELSIZE = 24$/;"	v
+TICK_LABELSIZE	monitor/plot_defaults.py	/^TICK_LABELSIZE = 24$/;"	v
+TOPOS	util.py	/^TOPOS = {'ft': FatTreeTopo}$/;"	v
+TYPE_RPC	cluster_loadgen/client.cc	31;"	d	file:
+TYPE_TCP	cluster_loadgen/client.cc	30;"	d	file:
+TYPE_UDP	cluster_loadgen/client.cc	32;"	d	file:
+UDP	cluster_loadgen/client.h	/^    UDP = 3$/;"	e	enum:trafficType
+_GlobalFirstFit	HController.py	/^    def _GlobalFirstFit(self,flow):$/;"	m	class:HController
+__init__	DCController.py	/^    def __init__(self):$/;"	m	class:Switch
+__init__	DCController.py	/^    def __init__(self, t, r):$/;"	m	class:DCController
+__init__	DCRouting.py	/^    def __init__(self, topo):$/;"	m	class:HashedRouting
+__init__	DCRouting.py	/^    def __init__(self, topo):$/;"	m	class:Routing
+__init__	DCTopo.py	/^    def __init__(self, k = 4):$/;"	m	class:FatTreeTopo
+__init__	DCTopo.py	/^    def __init__(self, k=4):$/;"	m	class:NonBlockingTopo
+__init__	DCTopo.py	/^    def __init__(self, pod = 0, sw = 0, host = 0, name = None, dpid = None):$/;"	m	class:FatTreeNode
+__init__	HController.py	/^    def __init__(self):$/;"	m	class:Switch
+__init__	HController.py	/^    def __init__(self, t, r, bw):$/;"	m	class:HController
+_collectFlowStats	HController.py	/^    def _collectFlowStats(self):$/;"	m	class:HController
+_demandEstimator	HController.py	/^    def _demandEstimator(self):$/;"	m	class:HController
+_ecmp_hash	DCController.py	/^    def _ecmp_hash(self, packet):$/;"	m	class:DCController
+_ecmp_hash	HController.py	/^    def _ecmp_hash(self, packet):$/;"	m	class:HController
+_flood	DCController.py	/^    def _flood(self, event):$/;"	m	class:DCController
+_flood	HController.py	/^    def _flood(self, event):$/;"	m	class:HController
+_handle_ConnectionUp	DCController.py	/^    def _handle_ConnectionUp(self, event):$/;"	m	class:DCController
+_handle_ConnectionUp	HController.py	/^    def _handle_ConnectionUp(self, event):$/;"	m	class:HController
+_handle_FlowStatsReceived	DCController.py	/^    def _handle_FlowStatsReceived (self, event):$/;"	m	class:DCController
+_handle_FlowStatsReceived	HController.py	/^    def _handle_FlowStatsReceived(self, event): $/;"	m	class:HController
+_handle_PacketIn	DCController.py	/^    def _handle_PacketIn(self, event):$/;"	m	class:DCController
+_handle_PacketIn	HController.py	/^    def _handle_PacketIn(self, event):$/;"	m	class:HController
+_install_GFF_path	HController.py	/^    def _install_GFF_path(self,GFF_route, match):$/;"	m	class:HController
+_install_reactive_path	DCController.py	/^    def _install_reactive_path(self, event, out_dpid, final_out_port, packet):$/;"	m	class:DCController
+_install_reactive_path	HController.py	/^    def _install_reactive_path(self, event, out_dpid, final_out_port, packet):$/;"	m	class:HController
+accept_incoming_connections	cluster_loadgen/server.cc	/^void accept_incoming_connections()$/;"	f
+action	monitor/plot_cpu.py	/^                    action="store_true")$/;"	v
+action	monitor/plot_queue.py	/^                    action="store",$/;"	v
+action	monitor/plot_queue.py	/^                    action="store_true")$/;"	v
+action	monitor/plot_rate.py	/^                    action="store",$/;"	v
+action	monitor/plot_rate.py	/^                    action="store_true")$/;"	v
+action	monitor/plot_rate.py	/^                    action="store_true",$/;"	v
+action	monitor/plot_tcpprobe.py	/^                    action="store_true",$/;"	v
+add_to_total_bytes_in	cluster_loadgen/main.cc	/^void add_to_total_bytes_in(long long val)$/;"	f
+add_to_total_bytes_out	cluster_loadgen/main.cc	/^void add_to_total_bytes_out(long long val)$/;"	f
+added	monitor/plot_tcpprobe.py	/^added = defaultdict(int)$/;"	v
+aggregate	monitor/plot_cpu.py	/^def aggregate(data):$/;"	f
+args	hedera.py	/^args = parser.parse_args()$/;"	v
+args	monitor/plot_cpu.py	/^args = parser.parse_args()$/;"	v
+args	monitor/plot_queue.py	/^args = parser.parse_args()$/;"	v
+args	monitor/plot_rate.py	/^args = parser.parse_args()$/;"	v
+args	monitor/plot_tcpprobe.py	/^args = parser.parse_args()$/;"	v
+args	plot_rate.py	/^args= parser.parse_args()$/;"	v
+arrowprops	monitor/plot_queue.py	/^                arrowprops=dict(arrowstyle="->"))$/;"	v
+avg	monitor/helper.py	/^def avg(lst):$/;"	f
+axHist	monitor/plot_tcpprobe.py	/^    axHist = fig.add_subplot(1, 2, 2)$/;"	v
+axPlot	monitor/plot_tcpprobe.py	/^axPlot = fig.add_subplot(1, plots, 1)$/;"	v
+buildTopo	util.py	/^def buildTopo(topo):$/;"	f
+bw	monitor/plot_rate.py	/^bw = map(lambda e: int(e.replace('M','')), args.labels)$/;"	v
+bytesLeft	cluster_loadgen/client.h	/^        long long bytesLeft;$/;"	m	class:Client
+bytesLeft	cluster_loadgen/server.h	/^        long long bytesLeft;$/;"	m	class:Server
+bytesTransferred	cluster_loadgen/client.h	/^        long long bytesTransferred;$/;"	m	class:Client
+bytesTransferred	cluster_loadgen/server.h	/^        long long bytesTransferred;$/;"	m	class:Server
+bytes_left	cluster_loadgen/client.cc	/^    long long bytes_left;$/;"	m	struct:traffic_gen_info	file:
+bytes_to_send	cluster_loadgen/server.cc	/^	long long bytes_to_send;$/;"	m	struct:client_info	file:
+bytes_transferred	cluster_loadgen/client.cc	/^    long long bytes_transferred;$/;"	m	struct:traffic_gen_info	file:
+bytes_transferred	cluster_loadgen/server.cc	/^	long long bytes_transferred;$/;"	m	struct:client_info	file:
+cdf	monitor/helper.py	/^def cdf(values):$/;"	f
+clean	hedera.py	/^def clean():$/;"	f
+client_info	cluster_loadgen/server.cc	/^struct client_info$/;"	s	file:
+client_info_queue	cluster_loadgen/server.cc	/^queue<struct client_info> client_info_queue;$/;"	v
+client_init	cluster_loadgen/client.cc	/^void client_init()$/;"	f
+client_thread	cluster_loadgen/main.cc	/^pthread_t client_thread;$/;"	v
+client_thread_main	cluster_loadgen/client.cc	/^void *client_thread_main(void *arg)$/;"	f
+close_client_connections	cluster_loadgen/server.cc	/^void close_client_connections()$/;"	f
+coeff_variation	monitor/helper.py	/^def coeff_variation(lst):$/;"	f
+col	monitor/helper.py	/^def col(n, obj = None, clean = lambda e: e):$/;"	f
+colorGenerator	monitor/plot.py	/^def colorGenerator():$/;"	f
+column	monitor/plot_rate.py	/^        column = 3$/;"	v
+column	monitor/plot_rate.py	/^    column = 2$/;"	v
+connect	DCController.py	/^    def connect(self, connection):$/;"	m	class:Switch
+connect	HController.py	/^    def connect(self, connection):$/;"	m	class:Switch
+convertToStep	monitor/plot.py	/^def convertToStep(x, y):$/;"	f
+convertToStepUpCDF	monitor/plot.py	/^def convertToStepUpCDF(x, y):$/;"	f
+counting_thread_main	cluster_loadgen/main.cc	/^void counting_thread_main()$/;"	f
+curr_test_time	cluster_loadgen/main.cc	/^double curr_test_time;$/;"	v
+cwnd_time	monitor/plot_tcpprobe.py	/^cwnd_time = []$/;"	v
+data	monitor/plot_rate.py	/^    data = read_list(f)$/;"	v
+def_opts	DCTopo.py	/^    def def_opts(self, name):$/;"	m	class:FatTreeTopo
+def_opts	DCTopo.py	/^    def def_opts(self, name):$/;"	m	class:NonBlockingTopo
+default	hedera.py	/^        default='inputs\/all_to_all_data',$/;"	v
+default	monitor/plot_cpu.py	/^                    default=False,$/;"	v
+default	monitor/plot_cpu.py	/^                    default=None,$/;"	v
+default	monitor/plot_queue.py	/^                    default=0,$/;"	v
+default	monitor/plot_queue.py	/^                    default=1000,$/;"	v
+default	monitor/plot_queue.py	/^                    default=False,$/;"	v
+default	monitor/plot_queue.py	/^                    default=None, # Will show the plot$/;"	v
+default	monitor/plot_queue.py	/^                    default=None,$/;"	v
+default	monitor/plot_queue.py	/^                    default=[],$/;"	v
+default	monitor/plot_rate.py	/^                    default=".*",$/;"	v
+default	monitor/plot_rate.py	/^                    default=0,$/;"	v
+default	monitor/plot_rate.py	/^                    default=100,$/;"	v
+default	monitor/plot_rate.py	/^                    default=False,$/;"	v
+default	monitor/plot_rate.py	/^                    default=None, # Will show the plot$/;"	v
+default	monitor/plot_rate.py	/^                    default=None,$/;"	v
+default	monitor/plot_rate.py	/^                    default=[],$/;"	v
+default	monitor/plot_tcpprobe.py	/^                    default=False)$/;"	v
+default_dir	monitor/monitor.py	/^default_dir = '.'$/;"	v
+demand_estimation	DemandEstimation.py	/^def demand_estimation(flows, hostsList):$/;"	f
+demandsPrinting	DemandEstimation.py	/^def demandsPrinting(M,hostsList):$/;"	f
+dest	monitor/plot_cpu.py	/^                    dest="files")$/;"	v
+dest	monitor/plot_cpu.py	/^                    dest="labels")$/;"	v
+dest	monitor/plot_cpu.py	/^                    dest="out")$/;"	v
+dest	monitor/plot_cpu.py	/^                    dest="summarise",$/;"	v
+dest	monitor/plot_queue.py	/^                    dest="cdf",$/;"	v
+dest	monitor/plot_queue.py	/^                    dest="files")$/;"	v
+dest	monitor/plot_queue.py	/^                    dest="labels")$/;"	v
+dest	monitor/plot_queue.py	/^                    dest="legend")$/;"	v
+dest	monitor/plot_queue.py	/^                    dest="maxy")$/;"	v
+dest	monitor/plot_queue.py	/^                    dest="miny")$/;"	v
+dest	monitor/plot_queue.py	/^                    dest="out")$/;"	v
+dest	monitor/plot_queue.py	/^                    dest="summarise",$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="files")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="labels")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="legend")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="maxy")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="miny")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="normalise")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="out")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="pat_iface")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="rx")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="summarise",$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="xlabel")$/;"	v
+dest	monitor/plot_rate.py	/^                    dest="ylabel")$/;"	v
+destRandom	cluster_loadgen/client.h	/^        bool destRandom;$/;"	m	class:Client
+destRandom	cluster_loadgen/server.h	/^        bool destRandom;$/;"	m	class:Server
+dest_random	cluster_loadgen/client.cc	/^    int dest_random;$/;"	m	struct:traffic_gen_info	file:
+done	cluster_loadgen/client.cc	/^    int done;$/;"	m	struct:traffic_gen_info	file:
+done	cluster_loadgen/client.h	/^        int done;$/;"	m	class:Client
+done	cluster_loadgen/server.h	/^        int done;$/;"	m	class:Server
+dst	DemandEstimation.py	/^        dst = random.randint(0,14)$/;"	v
+dstAddr	cluster_loadgen/client.h	/^        struct sockaddr_in dstAddr;$/;"	m	class:Client	typeref:struct:Client::sockaddr_in
+dstAddr	cluster_loadgen/server.h	/^        struct sockaddr_in dstAddr;$/;"	m	class:Server	typeref:struct:Server::sockaddr_in
+dstaddr	cluster_loadgen/client.cc	/^    struct sockaddr_in dstaddr;$/;"	m	struct:traffic_gen_info	typeref:struct:traffic_gen_info::sockaddr_in	file:
+events	monitor/plot_tcpprobe.py	/^events = []$/;"	v
+ewma	monitor/helper.py	/^def ewma(alpha, values):$/;"	f
+f	monitor/helper.py	/^        def f(item):$/;"	f	function:col
+fig	monitor/plot_tcpprobe.py	/^fig = plt.figure()$/;"	v
+first	monitor/plot_tcpprobe.py	/^def first(lst):$/;"	f
+flowSize	cluster_loadgen/client.h	/^        long long flowSize;$/;"	m	class:Client
+flowSize	cluster_loadgen/server.h	/^        long long flowSize;$/;"	m	class:Server
+flowSizeRandom	cluster_loadgen/client.h	/^        bool flowSizeRandom;$/;"	m	class:Client
+flowSizeRandom	cluster_loadgen/server.h	/^        bool flowSizeRandom;$/;"	m	class:Server
+flow_size	cluster_loadgen/client.cc	/^    long long flow_size;$/;"	m	struct:traffic_gen_info	file:
+flow_size_random	cluster_loadgen/client.cc	/^    int flow_size_random;$/;"	m	struct:traffic_gen_info	file:
+flows	DemandEstimation.py	/^    flows = []$/;"	v
+getRouting	util.py	/^def getRouting(routing, topo):$/;"	f
+get_bisection_bw	plot_rate.py	/^def get_bisection_bw(input_file, pat_iface):$/;"	f
+get_current_time	cluster_loadgen/main.cc	/^double get_current_time()$/;"	f
+get_interface_addr	cluster_loadgen/client.cc	/^struct in_addr get_interface_addr(const char *interface)$/;"	f
+get_random_ip	cluster_loadgen/client.cc	/^in_addr_t get_random_ip(struct traffic_gen_info *tgen_info)$/;"	f
+get_route	DCRouting.py	/^    def get_route(self, src, dst, hash_):$/;"	m	class:HashedRouting
+get_route	DCRouting.py	/^    def get_route(self, src, dst, hash_):$/;"	m	class:Routing
+get_style	monitor/plot_queue.py	/^def get_style(i):$/;"	f
+get_test_time	cluster_loadgen/main.cc	/^double get_test_time()$/;"	f
+get_total_bytes_in	cluster_loadgen/main.cc	/^long long get_total_bytes_in()$/;"	f
+get_total_bytes_out	cluster_loadgen/main.cc	/^long long get_total_bytes_out()$/;"	f
+grouper	monitor/helper.py	/^def grouper(n, iterable, fillvalue=None):$/;"	f
+handleint	cluster_loadgen/main.cc	/^void handleint(int signum)$/;"	f
+hatchGenerator	monitor/plot.py	/^def hatchGenerator():$/;"	f
+help	hedera.py	/^        help='Duration (sec) to run the experiment')$/;"	v
+help	hedera.py	/^        help='Output directory')$/;"	v
+help	hedera.py	/^        help='Traffic generator input file')$/;"	v
+help	hedera.py	/^        help='Use iperf to generate traffics')$/;"	v
+help	hedera.py	/^        help='cpu fraction to allocate to each host')$/;"	v
+help	monitor/plot_cpu.py	/^                    help="File to read CPU usage from.",$/;"	v
+help	monitor/plot_cpu.py	/^                    help="Labels for x-axis if summarising; defaults to file names",$/;"	v
+help	monitor/plot_cpu.py	/^                    help="Output png for plot",$/;"	v
+help	monitor/plot_cpu.py	/^                    help="Summarise the time series plot (boxplot).  First 10 and last 10 values are ignored.",$/;"	v
+help	monitor/plot_queue.py	/^                    help="Labels for x-axis if summarising; defaults to file names",$/;"	v
+help	monitor/plot_queue.py	/^                    help="Legend to use if there are multiple plots.  File names used as default.",$/;"	v
+help	monitor/plot_queue.py	/^                    help="Max mbps on y-axis..",$/;"	v
+help	monitor/plot_queue.py	/^                    help="Min mbps on y-axis..",$/;"	v
+help	monitor/plot_queue.py	/^                    help="Output png file for the plot.",$/;"	v
+help	monitor/plot_queue.py	/^                    help="Plot CDF of queue timeseries (first 10 and last 10 values are ignored)",$/;"	v
+help	monitor/plot_queue.py	/^                    help="Queue timeseries output to one plot",$/;"	v
+help	monitor/plot_queue.py	/^                    help="Summarise the time series plot (boxplot).  First 10 and last 10 values are ignored.",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Custom label for x-axis",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Custom label for y-axis",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Interfaces to plot (regex)",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Labels for x-axis if summarising; defaults to file names",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Legend to use if there are multiple plots.  File names used as default.",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Max mbps on y-axis..",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Min mbps on y-axis..",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Output png file for the plot.",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Plot receive rates on the interfaces.",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Rate timeseries output to one plot",$/;"	v
+help	monitor/plot_rate.py	/^                    help="Summarise the time series plot (boxplot).  First 10 and last 10 values are ignored.",$/;"	v
+help	monitor/plot_rate.py	/^                    help="normalise y-axis",$/;"	v
+help	monitor/plot_tcpprobe.py	/^                    help="Plot histogram of sum(cwnd_i)",$/;"	v
+help	plot_rate.py	/^        help="Output png file for the plot.")$/;"	v
+hostsList	DemandEstimation.py	/^    hostsList = range(15)$/;"	v
+idx	monitor/plot_rate.py	/^idx = 0$/;"	v
+ifname	monitor/plot_rate.py	/^            ifname = row[1]$/;"	v
+input_filename	cluster_loadgen/main.cc	/^char *input_filename;$/;"	v
+install	DCController.py	/^    def install(self, port, match, modify = False, buf = -1, idle_timeout = 0, hard_timeout = 0):$/;"	m	class:Switch
+install	HController.py	/^    def install(self, port, match, buf = -1, deleteFlow=False, idle_timeout = 0 ):$/;"	m	class:Switch
+interrupted	cluster_loadgen/main.cc	/^volatile bool interrupted;$/;"	v
+ip_str	DCTopo.py	/^    def ip_str(self):$/;"	m	class:FatTreeNode
+iperfTrafficGen	hedera.py	/^def iperfTrafficGen(args, hosts, net):$/;"	f
+isPortUp	DCTopo.py	/^    def isPortUp(self, port):$/;"	m	class:FatTreeTopo
+labels	plot_rate.py	/^labels=['stag0(0.2,0.3)', 'stag1(0.2,0.3)', 'stag2(0.2,0.3)', 'stag0(0.5,0.3)',$/;"	v
+launch	DCController.py	/^def launch(topo = None, routing = None):$/;"	f
+launch	HController.py	/^def launch(topo = None, routing = None, bw = None ):$/;"	f
+layer	DCTopo.py	/^    def layer(self, name):$/;"	m	class:FatTreeTopo
+layer	DCTopo.py	/^    def layer(self, name):$/;"	m	class:NonBlockingTopo
+layer_nodes	DCTopo.py	/^    def layer_nodes(self, layer):$/;"	m	class:FatTreeTopo
+listen_port	cluster_loadgen/main.cc	/^unsigned short listen_port;$/;"	v
+log	DCController.py	/^log = core.getLogger()$/;"	v
+log	HController.py	/^log = core.getLogger()$/;"	v
+lower_nodes	DCTopo.py	/^    def lower_nodes(self, name):$/;"	m	class:FatTreeTopo
+mac_str	DCTopo.py	/^    def mac_str(self):$/;"	m	class:FatTreeNode
+main	cluster_loadgen/main.cc	/^int main(int argc, char *argv[])$/;"	f
+makeFlows	DemandEstimation.py	/^def makeFlows(flows, src, dsts):$/;"	f
+markerGenerator	monitor/plot.py	/^def markerGenerator():$/;"	f
+max_total_cwnd	monitor/plot_tcpprobe.py	/^max_total_cwnd = 0$/;"	v
+min_total_cwnd	monitor/plot_tcpprobe.py	/^min_total_cwnd = 10**10$/;"	v
+monitor_count	monitor/monitor.py	/^def monitor_count(ipt_args="--src 10.0.0.0\/8",$/;"	f
+monitor_cpu	monitor/monitor.py	/^def monitor_cpu(fname="%s\/cpu.txt" % default_dir):$/;"	f
+monitor_devs	monitor/monitor.py	/^def monitor_devs(dev_pattern='^s', fname="%s\/bytes_sent.txt" %$/;"	f
+monitor_devs_ng	monitor/monitor.py	/^def monitor_devs_ng(fname="%s\/txrate.txt" % default_dir, interval_sec=0.01):$/;"	f
+monitor_qlen	monitor/monitor.py	/^def monitor_qlen(iface, interval_sec = 0.01, fname='%s\/qlen.txt' % default_dir):$/;"	f
+my_addr	cluster_loadgen/client.cc	/^struct in_addr my_addr;$/;"	v	typeref:struct:in_addr
+name_str	DCTopo.py	/^    def name_str(self):$/;"	m	class:FatTreeNode
+nargs	monitor/plot_cpu.py	/^                    nargs="+",$/;"	v
+nargs	monitor/plot_queue.py	/^                    nargs="+",$/;"	v
+nargs	monitor/plot_queue.py	/^                    nargs='+',$/;"	v
+nargs	monitor/plot_rate.py	/^                    nargs="+",$/;"	v
+nargs	monitor/plot_rate.py	/^                    nargs='+',$/;"	v
+net_interface	cluster_loadgen/main.cc	/^const char *net_interface;$/;"	v
+nextStartTime	cluster_loadgen/client.h	/^        double nextStartTime;$/;"	m	class:Client
+nextStartTime	cluster_loadgen/server.h	/^        double nextStartTime;$/;"	m	class:Server
+next_start_time	cluster_loadgen/client.cc	/^    double next_start_time;$/;"	m	struct:traffic_gen_info	file:
+offset	monitor/plot_queue.py	/^            offset = (-10, 20)$/;"	v
+offset	monitor/plot_queue.py	/^            offset = (-20,20)$/;"	v
+parse_cpu_usage	monitor/helper.py	/^def parse_cpu_usage(fname, nprocessors=8):$/;"	f
+parse_file	monitor/plot_tcpprobe.py	/^def parse_file(f):$/;"	f
+parse_input_file	cluster_loadgen/client.cc	/^int parse_input_file(char *filename, vector<struct traffic_gen_info *> &tgen_info_vector, int *line_count, int *field_count)$/;"	f
+parser	hedera.py	/^parser = ArgumentParser(description="ECMP routing")$/;"	v
+parser	monitor/plot_cpu.py	/^parser = argparse.ArgumentParser("Plot stacked bar chart of CPU usage")$/;"	v
+parser	monitor/plot_queue.py	/^parser = argparse.ArgumentParser()$/;"	v
+parser	monitor/plot_rate.py	/^parser = argparse.ArgumentParser()$/;"	v
+parser	monitor/plot_tcpprobe.py	/^parser = argparse.ArgumentParser()$/;"	v
+parser	plot_rate.py	/^parser = argparse.ArgumentParser()$/;"	v
+pat_iface	monitor/plot_rate.py	/^pat_iface = re.compile(args.pat_iface)$/;"	v
+pc95	monitor/helper.py	/^def pc95(lst):$/;"	f
+pc99	monitor/helper.py	/^def pc99(lst):$/;"	f
+plotCDF	monitor/plot.py	/^def plotCDF(data, title, xlabel, ylabel, step):$/;"	f
+plotTimeSeries	monitor/plot.py	/^def plotTimeSeries(data, title, xlabel, ylabel, step):$/;"	f
+plot_cwnds	monitor/plot_tcpprobe.py	/^def plot_cwnds(ax):$/;"	f
+plot_results	plot_rate.py	/^def plot_results(args):$/;"	f
+plot_series	monitor/plot_cpu.py	/^def plot_series():$/;"	f
+plot_summary	monitor/plot_cpu.py	/^def plot_summary():$/;"	f
+plots	monitor/plot_tcpprobe.py	/^    plots = 2$/;"	v
+plots	monitor/plot_tcpprobe.py	/^plots = 1$/;"	v
+prog_name	cluster_loadgen/main.cc	/^char *prog_name;$/;"	v
+randomize	cluster_loadgen/client.cc	/^double randomize(unsigned int *seed, double avg_val)$/;"	f
+rate	monitor/plot_rate.py	/^    rate = {}$/;"	v
+read_double	cluster_loadgen/main.cc	/^int read_double(char *str, double *val)$/;"	f
+read_int	cluster_loadgen/main.cc	/^int read_int(char *str, int *val)$/;"	f
+read_list	monitor/helper.py	/^def read_list(fname, delim=','):$/;"	f
+read_long_long	cluster_loadgen/main.cc	/^int read_long_long(char *str, long long *val)$/;"	f
+read_uint	cluster_loadgen/main.cc	/^int read_uint(char *str, unsigned int *val)$/;"	f
+read_ushort	cluster_loadgen/main.cc	/^int read_ushort(char *str, unsigned short *val)$/;"	f
+recv_all_udp	cluster_loadgen/server.cc	/^void recv_all_udp()$/;"	f
+recv_buf	cluster_loadgen/client.cc	/^char recv_buf[BUFSIZE];$/;"	v
+recv_send_tcp	cluster_loadgen/server.cc	/^void recv_send_tcp()$/;"	f
+repetitions	cluster_loadgen/client.cc	/^    long long repetitions;$/;"	m	struct:traffic_gen_info	file:
+repetitions	cluster_loadgen/client.h	/^        long long repetitions;$/;"	m	class:Client
+repetitions	cluster_loadgen/server.h	/^        long long repetitions;$/;"	m	class:Server
+repetitionsLeft	cluster_loadgen/client.h	/^        long long repetitionsLeft;$/;"	m	class:Client
+repetitionsLeft	cluster_loadgen/server.h	/^        long long repetitionsLeft;$/;"	m	class:Server
+repetitions_left	cluster_loadgen/client.cc	/^    long long repetitions_left;$/;"	m	struct:traffic_gen_info	file:
+required	monitor/plot_cpu.py	/^                    required=False,$/;"	v
+required	monitor/plot_cpu.py	/^                    required=True,$/;"	v
+required	monitor/plot_queue.py	/^                    required=False,$/;"	v
+required	monitor/plot_queue.py	/^                    required=True,$/;"	v
+required	monitor/plot_rate.py	/^                    required=False,$/;"	v
+required	monitor/plot_rate.py	/^                    required=True,$/;"	v
+response_length	cluster_loadgen/common.h	/^	long long response_length;$/;"	m	struct:rpc_req_info
+response_time	cluster_loadgen/server.cc	/^	double response_time;$/;"	m	struct:client_info	file:
+routes	DCRouting.py	/^    def routes(self, src, dst):$/;"	m	class:Routing
+rpcDelay	cluster_loadgen/client.h	/^        double rpcDelay;$/;"	m	class:Client
+rpcDelay	cluster_loadgen/server.h	/^        double rpcDelay;$/;"	m	class:Server
+rpcDelayRandom	cluster_loadgen/client.h	/^        bool rpcDelayRandom;$/;"	m	class:Client
+rpcDelayRandom	cluster_loadgen/server.h	/^        bool rpcDelayRandom;$/;"	m	class:Server
+rpcRequestSent	cluster_loadgen/client.h	/^        bool rpcRequestSent;$/;"	m	class:Client
+rpcRequestSent	cluster_loadgen/server.h	/^        bool rpcRequestSent;$/;"	m	class:Server
+rpc_delay	cluster_loadgen/client.cc	/^    double rpc_delay;$/;"	m	struct:traffic_gen_info	file:
+rpc_delay	cluster_loadgen/common.h	/^	double rpc_delay;$/;"	m	struct:rpc_req_info
+rpc_delay_random	cluster_loadgen/client.cc	/^    int rpc_delay_random;$/;"	m	struct:traffic_gen_info	file:
+rpc_req_info	cluster_loadgen/common.h	/^struct rpc_req_info$/;"	s
+rpc_request_sent	cluster_loadgen/client.cc	/^    int rpc_request_sent;$/;"	m	struct:traffic_gen_info	file:
+s	monitor/plot_queue.py	/^            s = '99pc: %d' % y$/;"	v
+s	monitor/plot_queue.py	/^            s = str(y)$/;"	v
+sample_period_us	cluster_loadgen/main.cc	/^unsigned int sample_period_us;$/;"	v
+second	monitor/plot_tcpprobe.py	/^def second(lst):$/;"	f
+seed	cluster_loadgen/client.cc	/^    unsigned int seed;$/;"	m	struct:traffic_gen_info	file:
+seed	cluster_loadgen/client.h	/^        unsigned int seed;$/;"	m	class:Client
+seed	cluster_loadgen/server.h	/^        unsigned int seed;$/;"	m	class:Server
+seed_init	cluster_loadgen/main.cc	/^unsigned int seed_init;$/;"	v
+send_buf	cluster_loadgen/client.cc	/^char send_buf[BUFSIZE];$/;"	v
+send_fake_rpc_request	cluster_loadgen/client.cc	/^void send_fake_rpc_request(struct traffic_gen_info *tgen_info)$/;"	f
+send_packet_bufid	DCController.py	/^    def send_packet_bufid(self, outport, buffer_id = -1):$/;"	m	class:Switch
+send_packet_bufid	HController.py	/^    def send_packet_bufid(self, outport, buffer_id = -1):$/;"	m	class:Switch
+send_packet_data	DCController.py	/^    def send_packet_data(self, outport, data = None):$/;"	m	class:Switch
+send_packet_data	HController.py	/^    def send_packet_data(self, outport, data = None):$/;"	m	class:Switch
+send_recv_data	cluster_loadgen/client.cc	/^void send_recv_data(struct traffic_gen_info *tgen_info)$/;"	f
+send_start_signal	cluster_loadgen/main.cc	/^void send_start_signal()$/;"	f
+server_fdmax	cluster_loadgen/server.cc	/^int server_fdmax;$/;"	v
+server_init	cluster_loadgen/server.cc	/^void server_init()$/;"	f
+server_readfds	cluster_loadgen/server.cc	/^fd_set server_readfds;$/;"	v
+server_thread	cluster_loadgen/main.cc	/^pthread_t server_thread;$/;"	v
+server_thread_main	cluster_loadgen/server.cc	/^void *server_thread_main(void *arg)$/;"	f
+server_wait_on_sockets	cluster_loadgen/server.cc	/^void server_wait_on_sockets()$/;"	f
+server_writefds	cluster_loadgen/server.cc	/^fd_set server_writefds;$/;"	v
+sock	cluster_loadgen/client.cc	/^    int sock;$/;"	m	struct:traffic_gen_info	file:
+sock	cluster_loadgen/client.h	/^        int sock;$/;"	m	class:Client
+sock	cluster_loadgen/server.cc	/^	int sock;$/;"	m	struct:client_info	file:
+sock	cluster_loadgen/server.h	/^        int sock;$/;"	m	class:Server
+startTime	cluster_loadgen/client.h	/^        double startTime;$/;"	m	class:Client
+startTime	cluster_loadgen/server.h	/^        double startTime;$/;"	m	class:Server
+start_flow	cluster_loadgen/client.cc	/^void start_flow(struct traffic_gen_info *tgen_info)$/;"	f
+start_signal	cluster_loadgen/main.cc	/^pthread_cond_t start_signal = PTHREAD_COND_INITIALIZER;$/;"	v
+start_signal_mutex	cluster_loadgen/main.cc	/^pthread_mutex_t start_signal_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+start_tcpprobe	hedera.py	/^def start_tcpprobe():$/;"	f
+start_test_timer	cluster_loadgen/main.cc	/^void start_test_timer()$/;"	f
+start_time	cluster_loadgen/client.cc	/^    double start_time;$/;"	m	struct:traffic_gen_info	file:
+stat	DCController.py	/^    def stat(self, port):$/;"	m	class:Switch
+stdev	monitor/helper.py	/^def stdev(lst):$/;"	f
+stopTime	cluster_loadgen/client.h	/^        double stopTime;$/;"	m	class:Client
+stopTime	cluster_loadgen/server.h	/^        double stopTime;$/;"	m	class:Server
+stop_tcpprobe	hedera.py	/^def stop_tcpprobe():$/;"	f
+stop_time	cluster_loadgen/client.cc	/^    double stop_time;$/;"	m	struct:traffic_gen_info	file:
+tcp_init	cluster_loadgen/server.cc	/^int tcp_init()$/;"	f
+tcp_listen_sock	cluster_loadgen/server.cc	/^int tcp_listen_sock;$/;"	v
+test_start_time	cluster_loadgen/main.cc	/^double test_start_time;$/;"	v
+tgen_info_vector	cluster_loadgen/client.cc	/^vector<struct traffic_gen_info *>tgen_info_vector;$/;"	v
+timeBetweenFlows	cluster_loadgen/client.h	/^        double timeBetweenFlows;$/;"	m	class:Client
+timeBetweenFlows	cluster_loadgen/server.h	/^        double timeBetweenFlows;$/;"	m	class:Server
+time_between_flows	cluster_loadgen/client.cc	/^    double time_between_flows;$/;"	m	struct:traffic_gen_info	file:
+time_between_flows_random	cluster_loadgen/client.cc	/^    int time_between_flows_random;$/;"	m	struct:traffic_gen_info	file:
+time_between_flows_random	cluster_loadgen/client.h	/^        bool time_between_flows_random;$/;"	m	class:Client
+time_between_flows_random	cluster_loadgen/server.h	/^        bool time_between_flows_random;$/;"	m	class:Server
+time_elapsed	cluster_loadgen/client.cc	/^    double time_elapsed; \/\/ FIXME: This looks unused. Can be removed$/;"	m	struct:traffic_gen_info	file:
+to_plot	monitor/plot_queue.py	/^to_plot=[]$/;"	v
+to_plot	monitor/plot_rate.py	/^to_plot=[]$/;"	v
+topos	DCTopo.py	/^topos = {'fattree': (lambda: FatTreeTopo())}$/;"	v
+total_bytes_in	cluster_loadgen/main.cc	/^volatile long long total_bytes_in;$/;"	v
+total_bytes_in_mutex	cluster_loadgen/main.cc	/^pthread_mutex_t total_bytes_in_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+total_bytes_out	cluster_loadgen/main.cc	/^volatile long long total_bytes_out;$/;"	v
+total_bytes_out_mutex	cluster_loadgen/main.cc	/^pthread_mutex_t total_bytes_out_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+total_cwnd	monitor/plot_tcpprobe.py	/^total_cwnd = 0$/;"	v
+totalcwnds	monitor/plot_tcpprobe.py	/^totalcwnds = []$/;"	v
+trafficGen	hedera.py	/^def trafficGen(args, hosts, net):$/;"	f
+trafficType	cluster_loadgen/client.h	/^enum trafficType {$/;"	g
+traffic_gen_info	cluster_loadgen/client.cc	/^struct traffic_gen_info$/;"	s	file:
+traffics	plot_rate.py	/^traffics=['stag_prob_0_2_3_data', 'stag_prob_1_2_3_data', 'stag_prob_2_2_3_data',$/;"	v
+transpose	monitor/helper.py	/^def transpose(l):$/;"	f
+type	cluster_loadgen/client.cc	/^    int type;$/;"	m	struct:traffic_gen_info	file:
+type	cluster_loadgen/client.h	/^        trafficType type;$/;"	m	class:Client
+type	cluster_loadgen/server.h	/^        trafficType type;$/;"	m	class:Server
+type	monitor/plot_queue.py	/^		    type=int,$/;"	v
+udp_init	cluster_loadgen/server.cc	/^int udp_init()$/;"	f
+udp_server_sock	cluster_loadgen/server.cc	/^int udp_server_sock;$/;"	v
+upper_nodes	DCTopo.py	/^    def upper_nodes(self, name):$/;"	m	class:FatTreeTopo
+usage	cluster_loadgen/main.cc	/^void usage()$/;"	f
+vals	monitor/plot_rate.py	/^                    vals = map(lambda e: e \/ bw[idx], vals)$/;"	v
+vals	monitor/plot_rate.py	/^                vals = filter(lambda e: e < 1500, rate[k][10:-10])$/;"	v
+verbosity	cluster_loadgen/main.cc	/^int verbosity;$/;"	v
+wait_for_start_signal	cluster_loadgen/main.cc	/^void wait_for_start_signal()$/;"	f
+xaxis	monitor/helper.py	/^def xaxis(values, limit):$/;"	f
+xaxis	monitor/plot_queue.py	/^    xaxis = range(1, 1+len(args.files))$/;"	v
+y	monitor/plot_queue.py	/^        y = pc99(to_plot[x-1])$/;"	v
