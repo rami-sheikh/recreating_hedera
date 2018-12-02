@@ -1,24 +1,10 @@
-Instruction on running the experiment
 
 
-git submodule init
-git submodule update
+setup.sh renames the folder to ~/hedera so make sure there are no conflicts
 
-cd cluster_loadgen
-make
+To run the experiment execute the following commands
 
+. ./setup.sh
 ./run_experiment
-
 ./gen_plot 
 
-Dependencies:
-    - Latest Mininet (git://github.com/mininet/mininet.git, cs244 branch)
-    - POX (git://github.com/noxrepo/pox)
-	
-
-Make sure to add ~/hedera to the pythonpath 
-
-or add a symbolic link in ~/pox/ext/ using 
-
-ln -s ~/hedera/DCController.py 
-ln -s ~/hedera/HController.py

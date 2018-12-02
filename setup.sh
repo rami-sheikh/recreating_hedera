@@ -22,10 +22,18 @@ popd 1> /dev/null
 
 cd ~
 if [ -e "eec273_hedera" ]; then
-    echo "Renaming 'eec273_hedera' to 'hedera'"
-    mv eec273_hedera hedera
+    if [ -e "hedera" ]; then
+        echo "Error cannot move folder to ~/hedera folder already exists."
+    else
+        echo "Renaming 'eec273_hedera' to 'hedera'"
+        mv eec273_hedera hedera
+    fi
 fi
 cd hedera
+
+pushd cluster_loadgen 1> /dev/null
+make
+popd 1> /dev/null
 
 echo -n "checking for matplotlib: "
 python -c "import matplotlib" 2> /dev/null
