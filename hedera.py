@@ -121,7 +121,6 @@ def iperfTrafficGen(args, hosts, net):
         src_ip = flow[0]
         dst_ip = flow[1]
         if src_ip not in host_list:
-            print("Unique: %s not in host_list" % src_ip)
             continue
         sleep(0.2)
         server = host_list[dst_ip]

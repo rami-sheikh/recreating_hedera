@@ -27,6 +27,15 @@ if [ -e "eec273_hedera" ]; then
 fi
 cd hedera
 
+echo -n "checking for matplotlib: "
+python -c "import matplotlib" 2> /dev/null
+if [ "$?" -ne "0" ]; then
+    echo "Not found. Installing."
+    sudo apt-get install -y python-matplotlib
+else
+    echo "Found."
+fi
+
 echo "Checking for required softlinks in ~/pox/ext"
 ls ~/hedera | grep ".py$" > deps
 ls ~/pox/ext | grep ".py$" > links
