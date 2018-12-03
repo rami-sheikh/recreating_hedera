@@ -1,3 +1,8 @@
 *.o
 *.pyc
 *.pyo
+client.txt
+server.txt
+tcp.txt
+results/
+monitor/
