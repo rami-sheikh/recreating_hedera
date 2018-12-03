@@ -44,6 +44,15 @@ else
     echo "Found."
 fi
 
+echo -n "checking for bwm-ng: "
+which bwm-ng 1> /dev/null
+if [ "$?" -ne "0" ]; then
+    echo "Not found. Installing."
+    sudo apt-get install -y bwm-ng
+else
+    echo "Found."
+fi
+
 echo "Checking for required softlinks in ~/pox/ext"
 ls ~/hedera | grep ".py$" > deps
 ls ~/pox/ext | grep ".py$" > links

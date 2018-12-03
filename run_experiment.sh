@@ -15,7 +15,7 @@ kill_pox() {
 }
 
 start_pox() {
-    ~/pox/pox.py --no-cli DCController --topo=ft,4 --routing=ECMP &
+    ~/pox/pox.py --no-cli $1 --topo=ft,4 --routing=ECMP &
     echo "waiting for pox to startup"
     sleep 5
 }
@@ -25,8 +25,6 @@ do
         input_file=$INPUT_DIR/$f
         pref="nonblocking"
         out_dir=$OUTPUT_DIR/$pref/$f
-        kill_pox
-        start_pox
         sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION -n --iperf
 done
 
@@ -36,7 +34,7 @@ do
         pref="fattree-ecmp"
         out_dir=$OUTPUT_DIR/$pref/$f
         kill_pox
-        start_pox
+        start_pox DCController
         sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION --ecmp --iperf
 done
 
@@ -46,7 +44,7 @@ do
         pref="fattree-hedera"
         out_dir=$OUTPUT_DIR/$pref/$f
         kill_pox
-        start_pox
+        start_pox HController
         sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION --hedera --iperf
 done
 
