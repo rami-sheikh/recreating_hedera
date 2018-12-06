@@ -19,32 +19,48 @@ start_pox() {
     sleep 3
 }
 
-for f in $INPUT_FILES;
-do
-        input_file=$INPUT_DIR/$f
-        pref="nonblocking"
-        out_dir=$OUTPUT_DIR/$pref/$f
-        sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION -n --iperf
+experiment() {
+
+	for f in $INPUT_FILES;
+	do
+	        input_file=$INPUT_DIR/$f
+	        pref="nonblocking"
+	        out_dir=$OUTPUT_DIR/$pref/$f
+	        sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION -n --iperf -q $queue -b $bandwidth 
+	done
+	
+	for f in $INPUT_FILES;
+	do
+	        input_file=$INPUT_DIR/$f
+	        pref="fattree-ecmp"
+	        out_dir=$OUTPUT_DIR/$pref/$f
+	        kill_pox
+	        start_pox DCController
+	        sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION --ecmp --iperf -q $queue -b $bandwidth 
+	done
+	
+	for f in $INPUT_FILES;
+	do
+	        input_file=$INPUT_DIR/$f
+	        pref="fattree-hedera"
+	        out_dir=$OUTPUT_DIR/$pref/$f
+	        kill_pox
+	        start_pox HController
+	        sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION --hedera --iperf -q $queue -b $bandwidth 
+	done
+
+	kill_pox
+}
+
+queue=100
+
+for bandwidth in `cat bw.txt`; do
+	OUTPUT_DIR="results_b$bandwidth"
+	experiment
 done
 
-for f in $INPUT_FILES;
-do
-        input_file=$INPUT_DIR/$f
-        pref="fattree-ecmp"
-        out_dir=$OUTPUT_DIR/$pref/$f
-        kill_pox
-        start_pox DCController
-        sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION --ecmp --iperf
+bandwidth=10
+for queue in `seq 200 -50 50`; do
+	OUTPUT_DIR="results_q$queue"
+	experiment
 done
-
-for f in $INPUT_FILES;
-do
-        input_file=$INPUT_DIR/$f
-        pref="fattree-hedera"
-        out_dir=$OUTPUT_DIR/$pref/$f
-        kill_pox
-        start_pox HController
-        sudo python hedera.py -i $input_file -d $out_dir -p 0.03 -t $DURATION --hedera --iperf
-done
-
-kill_pox
