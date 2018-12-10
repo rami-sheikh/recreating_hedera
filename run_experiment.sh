@@ -58,12 +58,12 @@ queue=100
 bandwidth=4
 
 for bandwidth in `cat bw.txt`; do
-	OUTPUT_DIR="outs/results_6b$bandwidth"
+	OUTPUT_DIR="outs/k4/results_b$bandwidth"
 	experiment
 done
 
 bandwidth=10
 for queue in `seq 200 -50 50`; do
-	OUTPUT_DIR="outs/results_6q$queue"
+	OUTPUT_DIR="outs/k4/results_q$queue"
 	experiment
 done
