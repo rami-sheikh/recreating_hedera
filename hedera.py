@@ -23,9 +23,10 @@ import sys
 
 
 # Number of pods in Fat-Tree 
-K = 4
-
 parser = ArgumentParser(description="ECMP routing")
+
+parser.add_argument('-k', '--param', dest='K', type=int, default=4,
+        help='K param for fat-tree topology.')
 
 parser.add_argument('-b', '--bandwidth', dest='BW', type=int, default=10,
         help='Bandwidth limit (Mbps) of the links.')
@@ -182,13 +183,13 @@ def trafficGen(args, hosts, net):
         h.cmd('killall loadgen')
 
 def FatTreeTest(args,controller):
-    net = FatTreeNet( k=K, cpu=args.cpu, bw=args.BW, queue=args.QUEUE_SIZE,
+    net = FatTreeNet( k=args.K, cpu=args.cpu, bw=args.BW, queue=args.QUEUE_SIZE,
             controller=controller)
     net.start()
 
     # wait for the switches to connect to the controller
     info('** Waiting for switches to connect to the controller\n')
-    sleep(5)
+    sleep(10)
 
     hosts = net.hosts
     
@@ -200,11 +201,11 @@ def FatTreeTest(args,controller):
     net.stop()
 
 def NonBlockingTest(args):
-    net = NonBlockingNet(k=K, cpu=args.cpu, bw=args.BW, queue=args.QUEUE_SIZE)
+    net = NonBlockingNet(k=args.K, cpu=args.cpu, bw=args.BW, queue=args.QUEUE_SIZE)
     net.start()
 
     info('** Waiting for switches to connect to the controller\n')
-    sleep(1)
+    sleep(10)
 
     hosts = net.hosts
 

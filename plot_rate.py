@@ -10,7 +10,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--input', '-f', dest='files', required=True, help='Input rates')
 parser.add_argument('--out', '-o', dest='out', default=None, 
         help="Output png file for the plot.")
-
+parser.add_argument('-k', '--kval', dest='k', type=int, default=4,
+        help='K param for fat-tree topology.')
 args= parser.parse_args()
 
 
@@ -60,6 +61,16 @@ def get_bisection_bw(input_file, pat_iface):
             
     return fsum(vals)
 
+def print_csv(labels, bb, name):
+    f = open("%s.csv" % name, 'w')
+    
+    f.write("label,ecmp,hedera,nonblocking\n")
+
+    for i in range(len(labels)):
+        f.write("%s,%f,%f,%f\n" % (labels[i], bb['ecmp'][i], bb['hedera'][i], bb['nonblocking'][i]) )
+
+    f.close()
+
 def plot_results(args):
 
     fbb = 16. * 10  #160 mbps
@@ -70,25 +81,25 @@ def plot_results(args):
 
     bb = {'nonblocking' : [],'hedera' :  [], 'ecmp' : []}
 
-    sw = '4h1h1'
+    sw = '%dh1h1' % args.k
     for t in traffics:
         print "Nonblocking:", t
         input_file = args.files + '/nonblocking/%s/rate.txt' % t    
         vals = get_bisection_bw(input_file, sw)
-        bb['nonblocking'].append(vals/fbb)
-
-    sw = '[0-3]h[0-1]h1'
+        bb['nonblocking'].append(vals)
+    
+    sw = '[0-%d]h[0-%d]h1' % ((args.k - 1), (args.k - 1))
     for t in traffics:
         print "ECMP:", t
         input_file = args.files + '/fattree-ecmp/%s/rate.txt' % t
         vals = get_bisection_bw(input_file, sw)
-        bb['ecmp'].append(vals/fbb/2)
+        bb['ecmp'].append(vals)
    
     for t in traffics:
        print "Hedera:", t
        input_file = args.files + '/fattree-hedera/%s/rate.txt' % t
        vals = get_bisection_bw(input_file, sw)
-       bb['hedera'].append(vals/fbb/2)
+       bb['hedera'].append(vals)
 
 
     ind = np.arange(n_t)
@@ -102,7 +113,8 @@ def plot_results(args):
         ax = fig.add_subplot(2,1,i+1)
         ax.yaxis.grid()
 
-        plt.ylim(0.0, 1.0)
+        #plt.ylim(0.0, 1.0)
+        plt.autoscale(enable=True,axis='y')
         plt.xlim(0,10)
         plt.ylabel('Normalized Average Bisection Bandwidth')
         plt.xticks(ind + 2.5*width, labels[i*n_t:(i+1)*n_t])
@@ -120,6 +132,7 @@ def plot_results(args):
         plt.legend([p1[0], p2[0], p3[0]],['Non-blocking', 'Hedera','ECMP'],loc='upper left')
 
         plt.savefig(args.out)
+        print_csv(labels,bb,args.out)
 
 
 plot_results(args)
